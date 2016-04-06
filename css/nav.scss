@@ -2,26 +2,47 @@ $instaBlue: #125688;
 
 nav.navbar {
 	background-color: #fff;
-	ul {
+	padding-top: 10px;
+	.list-inline {
 		display: inline;
+		li {
+			display: inline;
+		}
 	}
 
 	.list-unstyled {
 		list-style-type: none;
+
 	}
 	.flex-container {
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
-		width: 80%;
+		width: 85%;
 		margin: auto;
 
 		.nav-logo {
 			img {
-				width: 15%;
+				width: 150px;
 			}
 		}
+		li {
+			ul {
+				li {
+					padding-left: 30px;
+				}
+			}
 
+			i {
+			color: $instaBlue;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.searchbar {
+		display: none;
 	}
 }
