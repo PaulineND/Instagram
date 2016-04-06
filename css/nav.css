@@ -1,5 +1,17 @@
-nav .flex-container {
-  display: flex;
-  flex-flow: row nowrap; }
+nav.navbar {
+  background-color: #fff; }
+  nav.navbar ul {
+    display: inline; }
+  nav.navbar .list-unstyled {
+    list-style-type: none; }
+  nav.navbar .flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto; }
+    nav.navbar .flex-container .nav-logo img {
+      width: 20%; }
 
 /*# sourceMappingURL=nav.css.map */

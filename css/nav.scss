@@ -1,10 +1,27 @@
 $instaBlue: #125688;
 
-nav {
+nav.navbar {
+	background-color: #fff;
+	ul {
+		display: inline;
+	}
+
+	.list-unstyled {
+		list-style-type: none;
+	}
 	.flex-container {
 		display: flex;
 		flex-flow: row nowrap;
-		
+		justify-content: space-around;
+		align-items: center;
+		width: 80%;
+		margin: auto;
+
+		.nav-logo {
+			img {
+				width: 15%;
+			}
+		}
 
 	}
 }
