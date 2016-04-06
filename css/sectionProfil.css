@@ -1,0 +1,153 @@
+body {
+	background-color: #FAFAFA;
+  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+}
+
+.lettre_G {
+	font-size: 27px;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+.sabonner {
+	text-transform: uppercase;
+  border: 1px solid #4090db;
+  border-radius: 2px;
+  color: #4090db;
+  box-sizing: content-box;
+  background-color: #FAFAFA;
+}
+
+.sabonner:hover {
+  border-color: darkblue;
+  color: darkblue;
+}
+
+div#profil {
+  display: flex;
+  align-items:flex-end;
+  margin-bottom: 5px;
+}
+
+div#profil h1 {
+  padding-right: 8px;
+}
+
+div#profil>img, .sabonner {
+  margin-right: 15px;
+
+}
+
+#site_profil {
+  text-decoration:none;
+}
+
+#points {
+  background-color: transparent;
+  border : none;
+}
+
+#points>img {
+  height: 5px;
+}
+
+div#description {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+#description h2, span {
+  padding-right: 5px;
+}
+
+div#activite {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Positionner les éléments dans div product*/ 
+.product {
+	display: flex;
+  justify-content: center;
+	align-items: center;
+	padding: 20px;
+	border-radius: 3px;
+	transition: all 0.15s ease;	 */
+}
+
+/* Hover sur la div product*/
+.product:hover {
+  background: #f7f7fa;
+}
+
+.product-body {
+  margin-left: 8%;
+}
+
+.product-body>button {
+  display: none;
+}
+
+
+.fa {
+	color: rgb(230, 230, 230);
+}
+
+.product-image {
+	border : 1px solid #cccfd0;
+	margin-left: 20px;
+	border-radius: 50%;
+}
+
+
+@media (max-width: 735px) { 
+  body {
+    font-size: 14px;
+
+  }
+
+div#profil {
+  margin-bottom: 15px;
+}
+
+div#description {
+  font-size: 13px;
+}
+
+.ligne_activite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-image {
+  width: 77px;
+  height: 77px;
+}
+
+  .lettre_G {
+  font-size: 23px;
+  line-height: 20px;
+  }
+
+  .product {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 415px) { 
+  .sabonner {
+  display: none;
+}
+
+.product-body>button {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+}
