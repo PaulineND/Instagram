@@ -1,4 +1,4 @@
-$('#btn_sabonner, #sabonner2').on('click', function (e) {
+$('#btn_sabonner, #sabonner2, #sabonner3 ').on('click', function (e) {
     
    $(this).toggleClass("sabonner");
    if ($(this).hasClass("sabonner")) {

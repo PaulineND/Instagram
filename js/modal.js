@@ -1,6 +1,6 @@
 var img1 = document.getElementById('img1');
 
-function createModal(e) {
+function createModal_old(e) {
 	// création des nouveaux éléments html
 	var modal = document.createElement('div');
 	var modalContent = document.createElement('div');
@@ -125,7 +125,43 @@ function createModal(e) {
 	});
 	
 }
+// **********************************************************************************************
 
 
-img1.addEventListener('click', createModal);
+$("#fenetre").hide();
+
+$('#closeBtn').css('cursor', 'pointer');
+
+$("#closeBtn").click(function () {
+	 $("#fenetre").hide();
+});
+
+function createModal(id) {        //  photo12.jpg ==>  ' url("img/img12.jpg")  '
+	$("#fenetreImg").css("background-image", 'url("img/img'+id.substring(5)+'.jpg")');  
+	$("#fenetre").show();
+}
+
+$(".main-photos-container-photos").click(function() {
+	 //console.log ($(this).attr("id")) ; 
+	 createModal($(this).attr("id")); 
+	} ) ;
+var count = 0;
+// quand on clique sur le coeur
+$("#jaime").click(function () {
+	 count++;
+});
+
+// quand j'appuie sur entree et que le commentaire différent de blanc
+$('#commentaire').keypress(function(event){
+	if(event.keyCode == '13'){
+		$("#messages").append("<li>"+  $("#commentaire").val() +"</li>");
+		$("#commentaire").val("");	
+	}
+
+});
+
+
+
+
+//img1.addEventListener('click', createModal);
 

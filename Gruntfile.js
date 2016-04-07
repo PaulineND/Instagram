@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 	        // 2. la configuration pour la concaténation va ici.
 			dist: {
 			        src: [
-			            'js/*.js' // , tous les JS dans le dossier js
+			            'js/sabonner.js', 'js/*.js' // , tous les JS dans le dossier js
 			        ],
 			        dest: 'js/build/scripts.js'
 			    },

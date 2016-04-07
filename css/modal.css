@@ -68,3 +68,18 @@
 	height: 600px;
 	flex-grow: 2;
 }
+
+
+#messages {
+	list-style: none;
+}
+
+#div_transparente {
+	background-color: transparent;
+	align-content: flex-end;
+}
+
+#jaime {
+	font-size: 24px; 
+	line-height: 1.5em;"
+}
