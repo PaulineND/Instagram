@@ -10,10 +10,104 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <meta name="description" content="une page">
     <meta name="author" content="Pauline, Hafida, Yacine, Harysson">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/build/style.css">
+
 </head>
 <body>
+<!-- NAVBAR -->
+     <nav class="navbar">
+        <ul class="flex-container list-unstyled list-inline">
+            <li class="nav-logo"><img src="img/nav-logo.svg" /></li>
+            <li><input class="searchbar" type="text" placeholder="chercher"></li>
+            <li>
+                <ul class="list-unstyled list-inline">
+                    <li><a href="#"><i class="fa fa-compass fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-gratipay fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-user fa-2x"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Section Profil, image ronde et description -->
+
+    <div class="product">
+      <img src="img/G.jpg" alt="Profil G" class="product-image">
+      <div class='product-body'>
+            <div id="profil">
+                <span class="lettre_G">g</span>
+                <img src="img/logo-abonne.png" alt="logo abonne verifier">
+                <button class="sabonner">s'abonner</button>
+                <button id="points"><img src="img/3points.png" alt="3 petits points"></button>
+            </div>
+            <div id="description">
+                <span class="lettre_G">G</span>
+                <span>Culture. Photography. Travel. Style.</span>
+                <a id="site_profil" href="http://gmagazine.co/">gmagazine.co/</a>
+            </div>
+            <button class="sabonner">s'abonner</button>
+            <div id="activite">
+                <div class="ligne_activite">
+                    <span id="nb_publi">789</span>
+                    <span>publications</span>
+                </div>
+                <div class="ligne_activite">
+                    <span id="nb_abonne">156k</span>
+                    <span>abonnés</span>
+                </div>
+                <div class="ligne_activite">
+                    <span id="nb_suivis">63</span>
+                    <span>suivis</span>
+                </div>
+            </div>
+      </div>
+    </div>
+
+<!-- PHOTOS -->
+    <main class="main-container">
+        <div class="main-photos-container">
+            <div class="main-photos-container-photos photo1"></div>
+            <div class="main-photos-container-photos photo2"></div>
+            <div class="main-photos-container-photos photo3"></div>
+            <div class="main-photos-container-photos photo4"></div>
+            <div class="main-photos-container-photos photo5"></div>
+            <div class="main-photos-container-photos photo6"></div>
+            <div class="main-photos-container-photos photo7"></div>
+            <div class="main-photos-container-photos photo8"></div>
+            <div class="main-photos-container-photos photo9"></div>
+            <div class="main-photos-container-photos photo10"></div>
+            <div class="main-photos-container-photos photo11"></div>
+            <div class="main-photos-container-photos photo12"></div>
+            <div class="main-photos-container-photos photo13"></div>
+            <div class="main-photos-container-photos photo14"></div>
+            <div class="main-photos-container-photos photo15"></div>
+        </div>
+    </main>
+
+<!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-gauche">
+            <ul>
+                <li><a href="">À propos de nous</a></li>
+                <li><a href="#">support</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">presse</a></li>
+                <li><a href="#">api</a></li>
+                <li><a href="#">emplois</a></li>
+                <li><a href="#">confidentialité</a></li>
+                <li><a href="#">conditions</a></li>
+                <li><a href="#">langue</a></li>
+            </ul>
+        </div>
+        <div class="footer-droite">
+            <ul>
+                <li>
+                    © 2016 instagram
+                </li>
+            </ul>
+        </div>
+    </div>
   <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/build/scripts.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,22 @@
+{
+  "name": "instagram",
+  "homepage": "https://github.com/hafidaEL/instagram",
+  "authors": [
+    "Pauline", "Hafida", "Yacine", "Harysson"
+  ],
+  "description": "Page instagram de l'utilisateur \"g\"",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1 - 2",
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}
