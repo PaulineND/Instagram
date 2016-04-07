@@ -10,18 +10,26 @@ body {
   font-weight: 300;
 }
 
-.sabonner {
-	text-transform: uppercase;
+
+.depart:hover {
+  border-color: darkblue;
+  color: darkblue;
+}
+
+.depart {
+  background-color: #FAFAFA;
+  color: #4090db;
+  text-transform: uppercase;
   border: 1px solid #4090db;
   border-radius: 2px;
   color: #4090db;
   box-sizing: content-box;
-  background-color: #FAFAFA;
+ 
 }
 
-.sabonner:hover {
-  border-color: darkblue;
-  color: darkblue;
+.sabonner {
+  color: white;
+  background-color: rgb(102, 189, 43);
 }
 
 div#profil {
@@ -34,7 +42,7 @@ div#profil h1 {
   padding-right: 8px;
 }
 
-div#profil>img, .sabonner {
+div#profil>img, #btn_sabonner {
   margin-right: 15px;
 
 }
@@ -140,7 +148,7 @@ div#description {
 
 
 @media (max-width: 415px) { 
-  .sabonner {
+  #btn_sabonner {
   display: none;
 }
 
