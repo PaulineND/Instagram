@@ -47,11 +47,17 @@ function createProfile(e) {
 	description.appendChild(descriptionT);
 
 	// ajout des textes paragraphes
-	fullName.appendChild("G magazine");
+	fullName.textContent = "G magazine";
 	webSite.textContent += "gmagazine.co/";
 	eMail.textContent += "me@gmagazine.co";
 	hobbies.textContent += "Culture, Photography, Travel, Style";
 	description.textContent += "Hey folks, G magazine is a really cool paper about stuff. We love pictures of unknow places that leaves you breathless, lifestyle articles, and news. Check us out !";
+
+	fullName.insertBefore(fullNameT, fullName.firstChild);
+	webSite.insertBefore(webSiteT, webSite.firstChild);
+	eMail.insertBefore(eMailT, eMail.firstChild);
+	hobbies.insertBefore(hobbiesT, hobbies.firstChild);
+	description.insertBefore(descriptionT, description.firstChild);
 
 	modalProfileContent.appendChild(fullName);
 	modalProfileContent.appendChild(webSite);
