@@ -100,7 +100,76 @@
     .main-container .main-photos-container .photo15 {
       background: url(../../img/img15.jpg) no-repeat center/cover; }
 
+.modal-picture {
+	background-color: rgba(0,0,0,0.7);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 
+}
+
+.modal-picture-content {
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	width: 800px;
+	height: 600px;
+}
+
+.modal-picture-image {
+	vertical-align: text-bottom;
+	background-size: cover;	
+	width: 500px;
+	height: 600px;
+
+}
+
+.close {
+	color: #fff;
+    position: fixed;
+    top: 0;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.mct-like {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.modal-avatar {
+	width: 40px;
+	height: 40px;
+}
+
+.subscribe-btn {
+	color: #4090DB;
+	border: 1px solid #4090DB;
+	/*padding: 6px;*/
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.modalContent-head {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.modalContentText {
+	width: 200px;
+	height: 600px;
+	flex-grow: 2;
+}
 nav.navbar {
   background-color: #fff;
   padding-top: 10px; }
@@ -706,12 +775,4 @@ div#description {
   margin-bottom: 5px;
 }
 
-}
-
-/*@import url('nav.css');
-@import url('footer.css');
-@import url('sectionProfil.css');
-@import url('main.css');*/
-body {
-font-family: 'Open Sans', sans-serif;
 }
