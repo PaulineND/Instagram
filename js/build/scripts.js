@@ -160,7 +160,7 @@ img1.addEventListener('click', createModal);
 
 
 console.log('backgroundColor :' + $('.sabonner').css("background-color");
-$('.sabonner').click(function () {
+$('#btn_sabonner').click(function () {
 	 $(this).css("background-color","green");
 	 console.log('backgroundColor :' + $('.sabonner').css("background-color");
 
