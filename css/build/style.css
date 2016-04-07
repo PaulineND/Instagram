@@ -100,6 +100,19 @@
     .main-container .main-photos-container .photo15 {
       background: url(../../img/img15.jpg) no-repeat center/cover; }
 
+.modal-profile-content p span {
+	color: #125688;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.modal-profile-content {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	width: 800px;
+	height: 600px;
+}
 .modal-picture {
 	background-color: rgba(0,0,0,0.7);
 	display: flex;
