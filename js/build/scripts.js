@@ -1,3 +1,22 @@
+var susp = document.getElementById('points');
+var bodyProfile = document.getElementById('body');
+
+function createProfile(e) {
+	// création des éléments html
+	var modalProfile = document.createElement('div');
+
+	// ajout des attributs
+	modalProfile.setAttribute('class', 'modal-picture');
+
+	// ajout des textes
+
+	// insertion dans le dom
+
+
+	// effacer du dom
+}
+
+susp.addEventListener('click', createProfile);
 var img1 = document.getElementById('img1');
 
 function createModal(e) {
@@ -130,3 +149,9 @@ function createModal(e) {
 img1.addEventListener('click', createModal);
 
 
+console.log('backgroundColor :' + $('.sabonner').css("background-color");
+$('#btn_sabonner').click(function () {
+	 $(this).css("background-color","green");
+	 console.log('backgroundColor :' + $('.sabonner').css("background-color");
+
+});
