@@ -39,14 +39,17 @@
 }
 
 .mct-like {
-	display: flex;
+	/* display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-between;
+	justify-content: space-between; */
+	margin-left: 5px;
 }
 
 .modal-avatar {
 	width: 40px;
 	height: 40px;
+	border : 1px solid grey;
+	border-radius: 50%;
 }
 
 .subscribe-btn {
@@ -72,6 +75,7 @@
 
 #messages {
 	list-style: none;
+	height: 360px;
 }
 
 #div_transparente {
@@ -83,3 +87,16 @@
 	font-size: 24px; 
 	line-height: 1.5em;"
 }
+
+#commentaire {
+	box-sizing: content-box;
+}
+
+.fa-heart {
+	color: red !important;
+}
+
+#lien_profil {
+	text-decoration: none;
+}
+

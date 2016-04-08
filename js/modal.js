@@ -146,15 +146,19 @@ $(".main-photos-container-photos").click(function() {
 	 createModal($(this).attr("id")); 
 	} ) ;
 var count = 0;
+$("#nb_jaime").html(count);
 // quand on clique sur le coeur
 $("#jaime").click(function () {
+	$(this).removeClass("fa-heart-o");
+	$(this).addClass("fa-heart");
 	 count++;
+	 $("#nb_jaime").html(count);
 });
 
 // quand j'appuie sur entree et que le commentaire différent de blanc
 $('#commentaire').keypress(function(event){
 	if(event.keyCode == '13'){
-		$("#messages").append("<li>"+  $("#commentaire").val() +"</li>");
+		$("#messages").append("<li>"+ "<strong>@totolatulipe</strong>" +$("#commentaire").val() +"</li>");
 		$("#commentaire").val("");	
 	}
 
