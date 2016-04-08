@@ -1,0 +1,79 @@
+.main-container {
+  width: 100%;
+  min-height: 1800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  @media screen and (max-width: 736px) {
+    .main-container .main-photos-container {
+      margin: 0; } }
+  .main-container .main-photos-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 15px;
+    max-width: 940px;
+    min-height: 100%; }
+  @media screen and (max-width: 736px) {
+    .main-container .main-photos-container-photos {
+      margin: 1% 1% 1% 0; } }
+  @media screen and (max-width: 970px) {
+    .main-container .main-photos-container-photos {
+      max-width: 30%;
+      height: auto; } }
+  .main-container .main-photos-container-photos {
+    min-width: 104px;
+    width: 30%;
+    height: 104px;
+    margin-bottom: 30px; }
+  .main-container .photo1 {
+    background: url(../img/img1.jpg) no-repeat center/contain; }
+  .main-container .photo2 {
+    background: url(../img/img2.jpg) no-repeat center/contain; }
+  .main-container .photo3 {
+    background: url(../img/img3.jpg) no-repeat center/contain; }
+  .main-container .photo4 {
+    background: url(../img/img4.jpg) no-repeat center/contain; }
+  .main-container .photo5 {
+    background: url(../img/img5.jpg) no-repeat center/contain; }
+  .main-container .photo6 {
+    background: url(../img/img6.jpg) no-repeat center/contain; }
+  .main-container .photo7 {
+    background: url(../img/img7.jpg) no-repeat center/contain; }
+  .main-container .photo8 {
+    background: url(../img/img8.jpg) no-repeat center/contain; }
+  .main-container .photo9 {
+    background: url(../img/img9.jpg) no-repeat center/contain; }
+  .main-container .photo10 {
+    background: url(../img/img10.jpg) no-repeat center/contain; }
+  .main-container .photo11 {
+    background: url(../img/img11.jpg) no-repeat center/contain; }
+  .main-container .photo12 {
+    background: url(../img/img12.jpg) no-repeat center/contain; }
+  .main-container .photo13 {
+    background: url(../img/img13.jpg) no-repeat center/contain; }
+  .main-container .photo14 {
+    background: url(../img/img14.jpg) no-repeat center/contain; }
+  .main-container .photo15 {
+    background: url(../img/img15.jpg) no-repeat center/contain; }
+  @media screen and (max-width: 415px) {
+    .main-container .main-photos-container-loading {
+      width: 90%;
+      height: 34px; } }
+  @media screen and (min-width: 416px) {
+    .main-container .main-photos-container-loading {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%; } }
+  .main-container .main-photos-container-loading {
+    border: 2px solid #4090DB;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-container .main-photos-container-loading .main-photos-container-loading-text {
+      text-transform: capitalize;
+      color: #4090DB; }
+
+/*# sourceMappingURL=photosfinal.css.map */

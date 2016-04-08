@@ -1,0 +1,111 @@
+//Yacine - Images
+$whole_page: 100%;
+$lightBlueColor: #4090DB;
+
+//  Container Principal - Corps de la page  //
+.main-container{
+    width: 100%;
+    min-height: 1800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    
+    
+//    Div contenant les images   //
+//    Pour Tablette < 736px    ////
+    @media screen and (max-width: 736px){
+        .main-photos-container{
+            margin: 0;   
+        }    
+    }    
+//    Pour Ecran Moyen-Grand    //
+    .main-photos-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around; 
+        margin: 0 15px;
+        max-width: 940px;
+//        min-height: 1600px;
+        min-height: 100%;
+      
+    }
+                
+//       Les Images   //     
+        
+//        Propriétés communes à toutes les images  //
+//        Pour Smartphone
+      @media screen and (max-width: 510px){
+            .main-photos-container-photos{
+//                flex-grow: 1;   
+            }
+        }
+//    Pour Tablette   //
+      @media screen and (max-width: 736px){
+            .main-photos-container-photos{
+                margin: 1% 1% 1% 0;   
+            }
+        }    
+//    Pour les écrans en dessous <970px    ////
+      @media screen and (max-width: 970px){
+          .main-photos-container-photos{
+              max-width: 30%;
+              height: auto;
+          }
+        }
+//        Pour Ecran Moyen-Grand
+        .main-photos-container-photos{
+            min-width: 104px;
+            width: 30%;
+            height: 104px;
+            margin-bottom: 30px;
+            //flex-shrink: 5;
+//            flex-grow: 1;
+//            flex-basis: 2;
+        }
+//        Chaque Images   //
+        .photo1{background: url(../img/img1.jpg) no-repeat center / contain}
+        .photo2{background: url(../img/img2.jpg) no-repeat center / contain}
+        .photo3{background: url(../img/img3.jpg) no-repeat center / contain}
+        .photo4{background: url(../img/img4.jpg) no-repeat center / contain}
+        .photo5{background: url(../img/img5.jpg) no-repeat center / contain}
+        .photo6{background: url(../img/img6.jpg) no-repeat center / contain}
+        .photo7{background: url(../img/img7.jpg) no-repeat center / contain}
+        .photo8{background: url(../img/img8.jpg) no-repeat center / contain}
+        .photo9{background: url(../img/img9.jpg) no-repeat center / contain}
+        .photo10{background: url(../img/img10.jpg) no-repeat center / contain}
+        .photo11{background: url(../img/img11.jpg) no-repeat center / contain}
+        .photo12{background: url(../img/img12.jpg) no-repeat center / contain}
+        .photo13{background: url(../img/img13.jpg) no-repeat center / contain}
+        .photo14{background: url(../img/img14.jpg) no-repeat center / contain}
+        .photo15{background: url(../img/img15.jpg) no-repeat center / contain}
+        
+    
+//        Bouton Pour charger le reste des images   //
+//        Sur Smartphone   //
+        @media screen and (max-width: 415px){    
+             .main-photos-container-loading{
+                width: 90%;
+                height: 34px;
+             }
+        }
+        @media screen and (min-width: 416px){
+             .main-photos-container-loading{
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+            }
+        }
+        .main-photos-container-loading{
+            border: 2px solid $lightBlueColor;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .main-photos-container-loading-text{
+                text-transform: capitalize;
+                color: $lightBlueColor;
+                
+            }
+        }
+}
